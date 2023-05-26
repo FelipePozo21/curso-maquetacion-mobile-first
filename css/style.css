@@ -127,6 +127,20 @@ main {
     line-height: 1.6rem;
     color: var(--light-greys);
 }
+.main-tables-container {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    overflow-x: visible ;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity; 
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
 .main-currency-table , .main-commision-table {
     width: 70%;
     min-width: 235px;
@@ -148,6 +162,7 @@ main {
     color: var(--secondary-blue);
 }
 .currency-table-container , .commision-table-container{
+    scroll-snap-align: center;
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -235,9 +250,8 @@ main {
     height: 24.01px;
     background-image: url(../assets/icons/batata.svg);
     color: #F7931A;
-    top: 1563px;
-    left: 50%;
-    transform: translate(-50%);
+    top: 1222px;
+    left: 145px;
 }
 .benefits-title h2{
     font-size: 2.4rem;
@@ -423,7 +437,7 @@ main {
 }
 .main-plans {
     width: 320px;
-    height: 537px;
+    height: 557px;
     position: relative;
     padding-top: 64px;
 }
@@ -656,4 +670,43 @@ button img {
     color: var(--white);
     width: 20px;
     height: 1px;
+}
+footer {
+    width: 320px;
+    height: 150px;
+
+    font-family: 'DM Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    background-color: var(--bitcoin-orange);
+}
+.footer-links {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 8px;
+    left: 64px;
+    justify-content: center;
+}
+.footer-links  a{
+    width: 56px;
+    height: 18px;
+    text-decoration: none;
+    color: var(--just-white);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.footer-logo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img {
+    width: 64px;
+    height: 50px;
 }
