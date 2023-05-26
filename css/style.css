@@ -423,7 +423,7 @@ main {
 }
 .main-plans {
     width: 320px;
-    height: 537px;
+    height: 557px;
     position: relative;
     padding-top: 64px;
 }
@@ -660,6 +660,7 @@ button img {
 footer {
     width: 320px;
     height: 150px;
+
     font-family: 'DM Sans', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -683,4 +684,15 @@ footer {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
+}
+.footer-logo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img {
+    width: 64px;
+    height: 50px;
 }
