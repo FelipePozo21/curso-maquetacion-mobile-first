@@ -657,3 +657,30 @@ button img {
     width: 20px;
     height: 1px;
 }
+footer {
+    width: 320px;
+    height: 150px;
+    font-family: 'DM Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    background-color: var(--bitcoin-orange);
+}
+.footer-links {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 8px;
+    left: 64px;
+    justify-content: center;
+}
+.footer-links  a{
+    width: 56px;
+    height: 18px;
+    text-decoration: none;
+    color: var(--just-white);
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
